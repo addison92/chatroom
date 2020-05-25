@@ -1,0 +1,13 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, button, input, textarea, table, th, td, hr, footer, header, menu, nav, section { margin: 0; padding: 0; }
+html {-webkit-text-size-adjust:none;font-family: 'SimSun', 'Microsoft YaHei',sans-serif; outline: 0;}
+body {-webkit-text-size-adjust:none;margin: 0; position: relative; font-family: 'SimSun', 'Microsoft YaHei',sans-serif; color: #333333;}
+table { border-collapse: collapse; border-spacing: 0}
+table td{word-break: break-all; word-wrap: break-word;position: relative;}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.container{position: relative; width: 197mm;height:210mm;margin:0 auto;font-size: 14px;word-spacing: 2px;}
+.container h3{text-align: center;line-height: 40px;font-size: 30px;font-family: SimSun;margin-top:40px;}
+.table_main{width: 100%;font-size: 14px;}
+.table_main div{line-height: 20px;}
+.table_time{line-height: 20px;}
+.table_main tr td{border: 1px solid #333;padding:12px;box-sizing: border-box;line-height: 16px;}

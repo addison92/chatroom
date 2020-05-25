@@ -1,0 +1,24 @@
+body, div, input,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { padding: 0; margin: 0; }
+table { border-collapse: collapse; border-spacing: 0; font-size: inherit; *font-size:100%;}
+html{font-family: 'SimSun';}
+.pull-left{ float: left!important; }
+.pull-right { float: right!important; }
+/*清除浮动*/
+.clearFix:after{
+    content: '';
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+.clearFix{
+    zoom: 1;
+}
+.content{width: 700px;margin:0 auto;}
+.content h1,.content h3{text-align: center;font-weight: normal;line-height: 40px;}
+.content .number{text-align: right;margin-right: 200px;line-height: 40px;}
+#printDetail table{width: 660px;margin:0 20px;}
+#printDetail table td{border: 1px solid #ccc;text-align: center;line-height: 24px;padding:12px;}
+#printDetail table td p{font-size: 14px;}
+#printDetail .footer{line-height: 30px;margin:0 20px;}

@@ -1,0 +1,593 @@
+html {
+  -webkit-text-size-adjust: none;
+  background: #f2f8ff;
+  font-family: "Microsoft YaHei", sans-serif;
+  outline: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  position: relative;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: rgb(51, 51, 51);
+}
+.clearFix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearFix {
+  zoom: 1;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.message {
+  box-shadow: 0 0 10px #ccc;
+  width: 1100px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -500px;
+  z-index: 999;
+}
+.messageLeft {
+  width: 210px;
+  background-color: #2158ac;
+  height: 100%;
+}
+.messageCenterHead {
+  background-color: #dcdcdc;
+  color: #666;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  height:40px;
+}
+.messageCenter {
+  width: 900px;
+  display: inline-block;
+  margin-left: -10px;
+  z-index: 10;
+  position: relative;
+  background: #fff;
+}
+.messageCenterLeft {
+  width: 600px;
+}
+/* .messageCenterRight {
+  width: 300px;
+  position: relative;
+} */
+.messageCenterHead span {
+  font-weight: normal;
+}
+.messageCenterHead .status {
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  display: inline-block;
+  color: #fff;
+  padding: 0 4px;
+  background: #289b00;
+}
+.messageCenterHead > .el-icon-minus {
+  line-height: 20px;
+}
+.distoryMessageList {
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden!important;
+}
+.messageCenterHead > .el-icon-minus:hover {
+  color: #2158ac;
+  cursor: pointer;
+}
+.distoryMessageList li:hover,.distoryMessageList li:focus {
+  background: #2f6bc6;
+  cursor: pointer;
+}
+.distoryMessageList li:hover .el-icon-close {
+  display: inline-block;
+}
+.distoryMessageList li:hover .el-icon-close:hover {
+  color: #e0e0e0;
+  cursor: pointer;
+}
+.peopleMessage {
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  line-height: 24px;
+}
+.el-icon-picture,
+.peopleIconBig {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+.el-icon-picture {
+  color: #fff;
+  font-size: 50px;
+}
+.distoryMessageList li {
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid #2b69c7;
+  overflow: hidden;
+}
+.distoryMessageList .peopleIconSmall {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  margin-right: 6px;
+}
+.distoryMessageList .peopleIconSmall img {
+  width: 20px;
+  height: 20px;
+}
+.distoryMessageList li span.name {
+  line-height: 20px;
+  color: #fff;
+  display: inline-block;
+  width: 155px;
+  vertical-align: middle;
+  white-space: nowrap;display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.distoryMessageList li span.el-icon-close {
+  color: #fff;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+.address-tree{overflow-x: hidden!important}
+.custom-tree-node span{display: inline-block;width:200px;white-space: nowrap;display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+.numberTip {
+  display: inline-block;
+  font-size: 12px;
+  height: 18px;
+  color: #fff;
+  background: #eb3c3c;
+  padding: 0 6px;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 10px;
+  position: absolute;
+  right: 28px;
+  top: 11px;
+  white-space: nowrap;  
+}
+.el-icon-success {
+  font-size: 10px;
+  color: #289b00;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.user-online {
+  color: #289b00;
+  font-size: 8px;
+}
+
+.user-offline {
+  color: #e0e0e0;
+  font-size: 8px;
+}
+
+.messageCenterRight {
+  position: relative;
+  width: 300px;
+  height: 560px;
+  border-left: 1px solid #e0e0e0;
+}
+.messageCenterRight h3 {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contactOne {
+  height: 500px;
+  overflow: auto;
+}
+.contactOne li {
+  color: #666;
+  line-height: 30px;
+}
+.contactOne li p {
+  color: #666;
+  line-height: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.contactTwo .peopleIconSmall {
+  position: relative;
+}
+.contactTwo .peopleIconSmall img {
+  width: 20px;
+  height: 20px;
+}
+.contactTwo li {
+  color: #666;
+  line-height: 20px;
+  padding: 6px 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.contactTwo li:hover {
+  background: #bfd8ff;
+}
+.contactTwo .name {
+  line-height: 20px;
+  margin-left: 6px;
+}
+.contactTwo li .peopleIconSmall {
+  float: left;
+  margin-right: 4px;
+}
+.contactTwo li .name {
+  float: left;
+  display: inline-block;
+  width: 105px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+.mainMessageSend {
+  height: 440px;
+  border-bottom: 1px solid #e0e0e0;
+  overflow: auto;
+}
+
+.user-online,.user-offline{position: absolute;top:0;right:5px;;line-height: 20px;padding:0 5px;}
+
+
+.moreButton .el-button {
+  background: none;
+  border: none;
+  padding: 8px 10px;
+}
+.moreButton .el-button:hover {
+  background: none;
+  color: #2158ac;
+}
+.mainMessageSendBottom .el-textarea__inner {
+  width: 100%;
+}
+.bigIcon {
+  font-size: 20px;
+}
+.messageContent {
+  font-size: 14px;
+  color: #333;
+  height: 40px;
+  line-height: 20px;
+  padding: 0 10px;
+  /* margin-bottom: 10px; */
+  display: inline-block;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+/* .sendButtonGroup {
+  border-radius: 4px;
+  background: #2158ac;
+  line-height: 20px;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+} */
+.sendButton {
+  color: #fff;
+  line-height: 20px;
+  background: none;
+  padding: 0 10px;
+  border: none;
+  border-right: 1px solid #e0e0e0;
+  display: inline-block;
+  cursor: pointer;
+}
+.sendButtonGroup .el-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #2158ac;
+  cursor: pointer;
+  border-radius: 4px 0 0 4px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.sendButtonGroup .el-button:focus,
+.sendButtonGroup .el-button:hover {
+  color: #fff;
+  border-color: #e0e0e0;
+  background-color: #2158ac;
+}
+.mainMessageSendBottom {
+  position: relative;
+}
+.mainMessageSendBottom .el-dropdown-link {
+  background: #2158ac;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  line-height: 20px;
+}
+.sendButtonGroup .el-dropdown {
+  margin-right: 10px;
+  width: 90px;
+}
+.el-icon--right {
+  margin: 0;
+}
+.mainMessageSend {
+  padding: 10px 20px;
+}
+.mainMessageSendLeft,
+.mainMessageSendRight {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.mainMessageSendLeft {
+  text-align: left;
+}
+.mainMessageSendRight {
+  text-align: right;
+}
+.mainMessageSendLeft img {
+  display: inline-block;
+  width: 33px;
+  float: left;
+}
+.mainMessageSendLeft .charts {
+  float: left;
+  margin-left: 6px;
+}
+.mainMessageSendLeft .charts .chart {
+  margin-top: -6px;
+  margin-left: -10px;
+  max-width: 400px;
+  padding: 8px 15px;
+  line-height: 20px;
+  color: #666;
+  background: #efefef;
+  border-radius: 6px;
+}
+.mainMessageSendLeft .triangle {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 6px solid #efefef;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.mainMessageSendRight img {
+  float: right;
+  display: inline-block;
+  width: 33px;
+}
+.mainMessageSendRight .charts {
+  float: right;
+  margin-right: 6px;
+}
+.mainMessageSendRight .charts .chart {
+  text-align: left;
+  margin-top: -6px;
+  margin-right: -10px;
+  max-width: 400px;
+  padding: 8px 15px;
+  line-height: 20px;
+  color: #fff;
+  background: #6da4fa;
+  border-radius: 6px;
+}
+.mainMessageSendRight .triangle {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 6px solid #6da4fa;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+.charts .chartContentName {
+  line-height: 30px;
+}
+.chartContent {
+  margin-top: -10px;
+}
+.el-icon-time {
+  vertical-align: middle;
+}
+.reportList {
+  position: absolute;
+  bottom: 100px;
+  left: -100px;
+  z-index: 999;
+  color: #666;
+  background: #fff;
+  border-radius: 6px;
+  width: 240px;
+  /* overflow: hidden; */
+  box-shadow: 0 0 10px #ccc;
+}
+.reportList ul {
+  max-height: 400px;
+  overflow: auto;
+}
+.reportList li {
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+.reportList li:hover {
+  background: #efefef;
+}
+.managerReport {
+  border: none;
+  background: none;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.editReportList {
+  text-align: center;
+}
+.editReportList ul {
+  max-height: 340px;
+  overflow: auto;
+}
+.editReportList li {
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.editReportList li:hover {
+  background: #efefef;
+}
+.editReportList .el-icon-check {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #2158ac;
+}
+.el-dialog__body .editReportList .el-input__inner {
+  border-top: 0 !important;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.el-icon-check {
+  line-height: 20px;
+}
+.reportList li:first-child:hover {
+  background: none;
+}
+.reportList .managerReport:hover {
+  color: #eb3c3c;
+}
+.reportListTriangle {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 8px solid #e8e8e8;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  bottom: -16px;
+  left: 50%;
+  opacity: 0.4;
+}
+/* 历史记录 */
+
+.historyMessage .historyMessageTitle {
+  padding: 5px 10px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #efefef;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+.historyMessage .mainMessageSendLeft .charts .chart,
+.historyMessage .mainMessageSendRight .charts .chart {
+  max-width: 150px;
+}
+.el-icon-close {
+  cursor: pointer;
+}
+
+.historyMessageMain {
+  padding: 5px;
+  height: 500px;
+  overflow-y: auto;
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+
+.historyMessageBottom ul li {
+  cursor: pointer;
+}
+.historyMessageBottom .el-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.chat-img {
+  position: fixed;
+  top: 18px;
+  right: 475px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.chat-img-offline {
+  position: fixed;
+  top: 4px;
+  right: 150px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.delete-msg li {
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-msg li:first-child {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.editManagerReport,
+.addWildCard {
+  margin-bottom: 15px;
+}
